@@ -1,0 +1,17 @@
+Collect data from spotify. Preferably top songs per month, each year, or similar associated data (especially if it can come in a ~by US State~ way)
+    store the data in a database/drive so we dont have to retrieve it again/ can aggregate each request.
+
+Collect data of unemployment per month, each year, or similarly associated social parameters for the USA, or maybe even globally/ for other countries
+    store the data in a database/drive so we dont have to retrieve it again/ can aggregate each request.
+
+Create an API for the spotify section, we want to be able to query the dataset and also be able to create and use smaller subsets of the data. so a transaction can be a list of queries, with the returned data being the table/data.
+create an API for the unemployment section, we want to be able to query in a similar manner.
+
+Create a controller that will be passing the queries to both API's. The purpose of all of this is to have a front facing UI that can select predefined queries:
+    those quries will be complicated and constructed on the backend, but it will attain the required information to provide the information to the UI.
+
+    For example, if we can get location data, we can chose to select popular monthly music genre, generate a heatmap for that, then gen a heatmap for unemployment and compare if music has any correlation.
+    and it should be able to provide a month by month graphic to show how things change, if possible it would be cool to have the heatmaps flow between the two states as a transition.
+
+
+The end product should be a UI displaying a map, that map will represent the data and how it changes over time, based on a selected query.
