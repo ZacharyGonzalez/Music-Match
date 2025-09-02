@@ -2,7 +2,7 @@ import mysql.connector
 import os
 from dotenv import load_dotenv
 
-class SQL_Handler():
+class SQLConnection():
     load_dotenv()
 
     def __init__(self):
@@ -27,8 +27,8 @@ class SQL_Handler():
         self.cursor.close()
         self.db.close()
 
-    def insertSong(self,city, songname, artists, spotifyURI):
-        values = f"'{city}', '{songname}','{artists}', '{spotifyURI}', "
-        query = f"INSERT INTO employees (id, name, ) VALUES ({values})" # note the f-string expression
+    def insertChart(self, week, city, songname, artists):
+        values = f"'{week}', {city}', '{songname}','{artists}'"
+        query = f"INSERT INTO employees (week, city, songname, artists) VALUES ({values})" # note the f-string expression
         self.cursor.execute(query)
         self.db.commit()
