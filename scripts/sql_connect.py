@@ -27,5 +27,8 @@ class SQL_Handler():
         self.cursor.close()
         self.db.close()
 
-    def insert(self,*args):
-        query = ""
+    def insertSong(self,city, songname, artists, spotifyURI):
+        values = f"'{city}', '{songname}','{artists}', '{spotifyURI}', "
+        query = f"INSERT INTO employees (id, name, ) VALUES ({values})" # note the f-string expression
+        self.cursor.execute(query)
+        self.db.commit()

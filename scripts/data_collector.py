@@ -11,7 +11,6 @@ elems={}
 cities={}
 weeks={}
 options=Options()
-options.set_preference("general.useragent.override", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36") 
 profile_path = "/home/zack-gonzalez/.mozilla/firefox/sjhpz778.default-release"
 profile = FirefoxProfile(profile_path)
 options.profile=profile
