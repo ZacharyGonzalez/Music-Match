@@ -1,4 +1,5 @@
-# Music-Match (WIP)
+# Music-Match (DISCONTINUED)
+*Acquiring the dataset required to continue this project would require substantial monetary investment, or breaking of user agreements. Asking for permission or alternatives did not result in useful material*
 
 
 Generation of top songs played by location with the ability to compare to other types of heatmap overlays (unemployment records from .gov for example).
